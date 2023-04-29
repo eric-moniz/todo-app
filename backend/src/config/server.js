@@ -6,10 +6,10 @@ const express = require('express');
 const server = express();
 
 //  Middlewares
-// middleware usado para o parser de formulários
-server.use(bodyParser, urlencoded({ extended: true }));
 // analisa o json
 server.use(bodyParser.json());
+// middleware usado para o parser de formulários
+server.use(bodyParser.urlencoded({ extended: true }));
 
 // inicinado o backend
 server.listen(port, function () {
