@@ -1,4 +1,5 @@
 import React from "react";
+import If from "./if";
 
 /**
  * Insere um botão <button> com classes bootstrap
@@ -10,19 +11,12 @@ import React from "react";
  *          <i className={"fa fa-" + props.icon}>
  */
 
-const IconButton = props => {
-    if (props.hide) {
-        return null;
-    } else {
-        return (
-            <button
-                className={"btn btn-" + props.style}
-                onClick={props.onClick}
-            >
-                <i className={"fa fa-" + props.icon}></i>
-            </button>
-        );
-    }
-};
+const IconButton = props => (
+    <If test={!props.hide}>
+        <button className={"btn btn-" + props.style} onClick={props.onClick}>
+            <i className={"fa fa-" + props.icon}></i>
+        </button>
+    </If>
+);
 
 export default IconButton;

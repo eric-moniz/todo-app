@@ -13,7 +13,7 @@ const TodoForm = props => (
         </Grid>
 
         <Grid cols="12 3 2">
-            <IconButton style="primary" onClick={} icon='plus'/>
+            <IconButton style="primary" icon="plus" />
         </Grid>
     </div>
 );
