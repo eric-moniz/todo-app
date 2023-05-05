@@ -25,6 +25,11 @@ const TodoForm = props => (
                 icon="search"
                 onClick={props.handleSearch}
             />
+            <IconButton
+                styles="default"
+                icon="close"
+                onClick={props.handleClear}
+            />
         </Grid>
     </div>
 );
