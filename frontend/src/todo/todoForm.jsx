@@ -20,6 +20,11 @@ const TodoForm = props => (
                 icon="plus"
                 onClick={props.handleAdd}
             />
+            <IconButton
+                styles="info"
+                icon="search"
+                onClick={props.handleSearch}
+            />
         </Grid>
     </div>
 );
