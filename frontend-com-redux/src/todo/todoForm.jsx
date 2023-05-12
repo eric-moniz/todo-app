@@ -1,4 +1,6 @@
 import React from 'react';
+import { connect } from 'react-redux';
+
 import Grid from '../template/grid';
 import IconButton from '../template/iconButton';
 
@@ -45,4 +47,5 @@ const TodoForm = props => {
     );
 };
 
-export default TodoForm;
+const mapStateToProps = state => ({ description: state.todo.description });
+export default connect(mapStateToProps)(TodoForm);
