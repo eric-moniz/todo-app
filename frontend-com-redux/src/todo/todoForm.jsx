@@ -12,6 +12,7 @@ class TodoForm extends Component {
         this.keyHandler = this.keyHandler.bind(this);
     }
 
+    // componente do react que sempre será executado quando o componente for exibido
     componentWillMount() {
         this.props.search();
     }

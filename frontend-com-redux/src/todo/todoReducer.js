@@ -1,22 +1,6 @@
 const INITAL_STATE = {
-    description: 'Ler livro',
-    list: [
-        {
-            _id: 1,
-            description: 'Pagar fatura do cartão',
-            done: true,
-        },
-        {
-            _id: 2,
-            description: 'Reunião com a equipe às 10:00',
-            done: false,
-        },
-        {
-            _id: 3,
-            description: 'Consulta médica na terça-feira após o almoço',
-            done: false,
-        },
-    ],
+    description: '',
+    list: [],
 };
 
 export default function todoReducer(state = INITAL_STATE, action) {
